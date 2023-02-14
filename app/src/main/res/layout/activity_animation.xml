@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#172783"
+    android:orientation="vertical"
+    tools:context=".animation"
+    tools:ignore="HardcodedText">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/kotlin"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="310dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/kotlin"
+        tools:ignore="ContentDescription" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/koding"
+        tools:ignore="ContentDescription,MissingConstraints" />
+
+
+
+    <Button
+        android:id="@+id/easy"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Oson"
+        android:textAllCaps="false"
+        android:textColor="#29D430"
+        android:backgroundTint="#1970B0"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/medium"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="O'rtacha"
+        android:textAllCaps="false"
+        android:textColor="#29D430"
+        android:backgroundTint="#1970B0"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/hard"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Q i y i n"
+        android:textAllCaps="false"
+        android:textColor="#29D430"
+        android:backgroundTint="#1970B0"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="170dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_cod"
+            tools:ignore="ContentDescription" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="UselessLeaf" >
+
+       <ImageView
+           android:layout_marginTop="120dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/kotlin"
+           tools:ignore="ContentDescription" />
+
+            <Button
+                android:id="@+id/malumot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Malumot"
+                android:textColor="#29D430"
+                android:backgroundTint="#1970B0"
+                android:layout_marginStart="105dp"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="false"/>
+
+            <ImageView
+                android:layout_marginStart="105dp"
+                android:layout_marginTop="120dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/kotlin"
+                tools:ignore="ContentDescription" />
+
+    </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
