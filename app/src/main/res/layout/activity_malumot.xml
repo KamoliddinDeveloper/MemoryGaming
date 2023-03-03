@@ -34,7 +34,6 @@
         tools:ignore="ContentDescription,MissingConstraints" />
 
     <TextView
-        android:id="@+id/men"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -48,7 +47,6 @@
         tools:ignore="HardcodedText" />
 
     <TextView
-        android:id="@+id/dastur"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -56,13 +54,12 @@
         app:layout_constraintVertical_bias="0.49"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="App nomi: Memory Game"
+        android:text="App nomi: Xotira o'yini"
         android:textColor="@color/black"
         android:textSize="25sp"
         tools:ignore="HardcodedText" />
 
     <TextView
-        android:id="@+id/data"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -70,13 +67,12 @@
         app:layout_constraintVertical_bias="0.54"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ishlagan  voqti: 12.11.2022"
+        android:text="Yaratilgan: 12.11.2022"
         android:textColor="@color/black"
         android:textSize="25sp"
         tools:ignore="HardcodedText" />
 
     <TextView
-        android:id="@+id/tili"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -84,7 +80,7 @@
         app:layout_constraintVertical_bias="0.59"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Kodni tili: Kotlin"
+        android:text="Dasturlash: Kotlin"
         android:textColor="@color/black"
         android:textSize="25sp"
         tools:ignore="HardcodedText" />
