@@ -1,12 +1,15 @@
 package com.example.memorygaming
 
+import android.annotation.SuppressLint
 import android.media.Image
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.CountDownTimer
 import android.view.View
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import android.widget.ImageView
+import com.example.memorygaming.databinding.ActivityMemoryGaming2Binding
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_main.image_1
 import kotlinx.android.synthetic.main.activity_main.image_2
@@ -32,10 +35,10 @@ class MemoryGaming2 : AppCompatActivity() {
     var ochiqRasm = 0
     var animationDoing = false
 
-
+private val binding by lazy { ActivityMemoryGaming2Binding.inflate(layoutInflater) }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_memory_gaming2)
+        setContentView(binding.root)
 
         menyu.setOnClickListener {
             finish()
@@ -43,7 +46,16 @@ class MemoryGaming2 : AppCompatActivity() {
         takrorlash.setOnClickListener {
             recreate()
         }
+        object : CountDownTimer(25000,1000){
+            @SuppressLint("SetTextI18n")
+            override fun onTick(millisUntilFinished: Long) {
+               binding.txtTime.text ="00:${millisUntilFinished/1000}"
+            }
 
+            override fun onFinish() {
+                recreate()
+            }
+        }.start()
 
         image_1.setOnClickListener {
             imageClic(image_1, R.drawable.cat, 0)
